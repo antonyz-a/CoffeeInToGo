@@ -1,0 +1,30 @@
+<div class="coffee_container">
+  <button class="button_back1" routerLink="/home">{{"BACK" | translate}}</button>
+  <div>
+    <div *ngFor="let food of breakfast" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3>{{!food.name ? food.name : "BakeryComponent." +food.name | translate}}</h3>
+        <p>
+          <strong [ngClass]="
+              food.promotionPrice ? 'promotionClass' : 'promotionClass2'
+            ">{{ food.price }}</strong>
+          <strong *ngIf="food.promotionPrice">
+            <span class="on_promotion">Promotion</span>
+            {{ food.promotionPrice }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <div *ngIf="!food.description?.startsWith('Coffee')">
+          <p>{{ !food.description ? food.description :
+            "BakeryComponent."+food.description | translate }}</p>
+        </div>
+        <div *ngIf="food.description?.startsWith('Coffee')">
+          <p style="font-weight: bold; font-style: italic;">{{"BakeryComponent.BreakfastCombo" | translate}}</p>
+          <p>{{ !food.description ? food.description :
+            "BakeryComponent."+food.description | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="button_back2" routerLink="/home">{{"BACK" | translate}}</button>
+</div>

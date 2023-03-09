@@ -1,0 +1,106 @@
+<div class="coffee_container">
+  <button class="button_back1" routerLink="/home">
+    {{ "BACK" | translate }}
+  </button>
+  <div>
+    <!-- *Coffee Container -->
+    <br />
+    <div class="weekend_container" *ngIf="cocktailBool">
+      <p>{{ "WeekendText" | translate }}</p>
+
+      <!-- <p routerLink="/coctails">Cocktail Night</p> -->
+      <button class="button_Weekend_Cocktails" routerLink="/coctails">
+        {{ "CocktailNightBtn" | translate }}
+      </button>
+      <!-- <img src="../../../assets/images/cocktails2.jpg" alt="sorry.jpg" routerLink="/coctails" /> -->
+    </div>
+    <br *ngIf="cocktailBool" />
+    <div class="alchocol_wrapper_two">
+      <p class="coffee_type">{{ "CoffeeComponent.coffeeTitle" | translate }}</p>
+      <div *ngFor="let drink of coffee" class="coffee_card">
+        <div class="name_and_price_wrapper">
+          <h3>{{ drink.name }}</h3>
+          <p>
+            <strong
+              [ngClass]="
+                drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+              "
+              >{{ drink.price }}</strong
+            >
+            <strong class="on_promotion_wrapper" *ngIf="drink.promotionPrice">
+              <span class="on_promotion"><span>Promotion</span></span>
+              {{ drink.promotionPrice }}</strong
+            >
+          </p>
+        </div>
+        <div class="description_wrapper">
+          <p>{{ drink.description }}</p>
+        </div>
+      </div>
+      <!-- *Coffee with milk -->
+      <p class="coffee_type_two">
+        {{ "CoffeeComponent.cofeeWithMilk" | translate }}
+      </p>
+      <div *ngFor="let drink of coffeeWithMilk" class="coffee_card">
+        <div class="name_and_price_wrapper">
+          <h3>{{ drink.name }}</h3>
+          <p>
+            <strong
+              [ngClass]="
+                drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+              "
+              >{{ drink.price }}</strong
+            >
+            <strong *ngIf="drink.promotionPrice">
+              <span class="on_promotion">Promotion</span>
+              {{ drink.promotionPrice }}</strong
+            >
+          </p>
+        </div>
+        <div class="description_wrapper">
+          <p>{{ drink.description }}</p>
+        </div>
+      </div>
+      <!-- *Drinks without coffein -->
+      <p class="coffee_type_three">
+        {{ "CoffeeComponent.drinksWithoutCoffeein" | translate }}
+      </p>
+      <div *ngFor="let drink of drinksWithoutCoffein" class="coffee_card">
+        <div class="name_and_price_wrapper">
+          <h3>
+            {{
+              !drink.name
+                ? drink.name
+                : ("CoffeeComponent." + drink.name | translate)
+            }}
+          </h3>
+          <p>
+            <strong
+              [ngClass]="
+                drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+              "
+              >{{ drink.price }}</strong
+            >
+            <strong *ngIf="drink.promotionPrice">
+              <span class="on_promotion">Promotion</span>
+              {{ drink.promotionPrice }}
+            </strong>
+          </p>
+        </div>
+        <div class="description_wrapper">
+          <p>
+            {{
+              !drink.description
+                ? drink.description
+                : ("CoffeeComponent." + drink.description | translate)
+            }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <button class="button_back2" routerLink="/home">
+    {{ "BACK" | translate }}
+  </button>
+</div>

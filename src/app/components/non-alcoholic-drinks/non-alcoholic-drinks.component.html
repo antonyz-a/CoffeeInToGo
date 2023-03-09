@@ -1,0 +1,47 @@
+<div class="coffee_container">
+  <button class="button_back1" routerLink="/home">{{"BACK" | translate}}</button>
+  <div>
+    <!-- Non-alchocolic drinks -->
+    <p class="non_alchocolic_type">
+      {{"Non-alcoholic Drinks" | translate}}
+    </p>
+    <div *ngFor="let drink of nonAlcoholicDrinks" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3>{{!drink.name ? drink.name : "NonAlcoholicDrinksCom." +drink.name | translate}}</h3>
+        <p>
+          <strong [ngClass]="
+              drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+            ">{{ drink.price }}</strong>
+
+          <strong *ngIf="drink.promotionPrice">
+            <span class="on_promotion">Promotion</span>
+            {{ drink.promotionPrice }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+
+    <!-- Fresh Juices -->
+    <p class="fresh_juice_type">{{"NonAlcoholicDrinksCom.Fresh Juices" | translate}}</p>
+    <div class="alchocol_wrapper_two" *ngFor="let drink of freshJuices" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3>{{drink.description ? drink.name : "NonAlcoholicDrinksCom." +drink.name | translate}}</h3>
+        <p>
+          <strong [ngClass]="
+              drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+            ">{{ drink.price }}</strong>
+
+          <strong *ngIf="drink.promotionPrice">
+            <span class="on_promotion">Promotion</span>
+            {{ drink.promotionPrice }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ !drink.description ? drink.description : "NonAlcoholicDrinksCom."+drink.description | translate }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="button_back2" routerLink="/home">{{"BACK" | translate}}</button>
+</div>

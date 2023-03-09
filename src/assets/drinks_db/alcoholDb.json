@@ -1,0 +1,443 @@
+[
+  [
+    {
+      "id": 1,
+      "name": "Скопско / Skopsko 0,33ml",
+      "price": "80ден."
+    },
+    {
+      "id": 2,
+      "name": "Златен Даб / Zlaten Dab 0,33ml",
+      "price": "80ден."
+    },
+    {
+      "id": 3,
+      "name": "Амстел / Amstel 0,33ml",
+      "price": "100ден."
+    },
+    {
+      "id": 4,
+      "name": "Туборг / Tuborg 0,33ml",
+      "price": "100ден."
+    },
+    {
+      "id": 5,
+      "name": "Хајнекен / Heineken 0,33ml",
+      "price": "120ден.",
+      "promotionPrice": ""
+    },
+    {
+      "id": 6,
+      "name": "Старопрамен / Staropramen 0,50ml",
+      "price": "150ден."
+    },
+    {
+      "id": 7,
+      "name": "Корона / Corona 0,33ml",
+      "price": "160ден."
+    },
+    {
+      "id": 8,
+      "name": "Пуланер / Paulaner 0,50ml",
+      "price": "200ден."
+    },
+    {
+      "id": 9,
+      "name": "Гинес / Guinness 0,33ml",
+      "price": "200ден.",
+      "promotionPrice": ""
+    },
+    {
+      "id": 72,
+      "name": "Лефе Блонд / Leffe Blonde 0,33ml",
+      "price": "140ден."
+    },
+    {
+      "id": 73,
+      "name": "Карлсберг / Carlsberg 0,33ml",
+      "price": "120ден."
+    },
+    {
+      "id": 74,
+      "name": "Стела / Stella 0,33ml",
+      "price": "120ден."
+    }
+  ],
+  [
+    {
+      "id": 10,
+      "name": "Мартини Бјанко / Martini Bianco 0,4ml",
+      "price": "100ден."
+    },
+
+    {
+      "id": 68,
+      "name": "Мартини Росо / Martini Rosso 0,4ml",
+      "price": "100ден."
+    },
+    {
+      "id": 69,
+      "name": "Мартини Фиеро / Martini Fiero 0,4ml",
+      "price": "100ден."
+    }
+  ],
+  [
+    {
+      "id": 12,
+      "name": "Пелинковац / Pelinkovac 0,4ml",
+      "price": "80ден."
+    },
+    {
+      "id": 14,
+      "name": "Јагермајстер / Jagermeister 0,4ml",
+      "price": "130ден."
+    }
+  ],
+  [
+    {
+      "id": 15,
+      "name": "Сакс / Sax 0,4ml",
+      "price": "80ден."
+    },
+    {
+      "id": 16,
+      "name": "Бомбај / Bombaj 0,4ml",
+      "price": "150ден."
+    },
+    {
+      "id": 17,
+      "name": "Гордонс / Gordons 0,4ml",
+      "price": "110ден."
+    },
+    {
+      "id": 70,
+      "name": "Гордонс Пинк / Gordons Pink 0,4ml",
+      "price": "120ден."
+    },
+    {
+      "id": 71,
+      "name": "Бифитер / Beefeater 0,4ml",
+      "price": "120ден."
+    },
+    {
+      "id": 18,
+      "name": "Танкерај / Tankeray 0,4ml",
+      "price": "150ден."
+    },
+    {
+      "id": 19,
+      "name": "Хендрикс / Hendricks 0,4ml",
+      "price": "280ден."
+    }
+  ],
+  [
+    {
+      "id": 20,
+      "name": "Капетан Морган / Captain Morgan 0,4ml",
+      "price": "100ден."
+    },
+    {
+      "id": 21,
+      "name": "Бакарди / Bacardi 0,4ml",
+      "price": "120ден.",
+      "promotionPrice": ""
+    },
+    {
+      "id": 67,
+      "name": "Бадел Рум / Badel Rum 0,4ml",
+      "price": "80ден."
+    }
+  ],
+  [
+    {
+      "id": 22,
+      "name": "Малибу / Malibu 0,4ml",
+      "price": "130ден."
+    },
+    {
+      "id": 23,
+      "name": "Арчерс / Archers 0,4ml",
+      "price": "110ден."
+    },
+    {
+      "id": 24,
+      "name": "Бејлис / Bailys 0,4ml",
+      "price": "150ден."
+    },
+    {
+      "id": 56,
+      "name": "Амарето / Amareto 0,4ml",
+      "price": "80ден.",
+      "promotionPrice": ""
+    },
+    {
+      "id": 13,
+      "name": "Урсус / Ursus 0,4ml",
+      "price": "110ден."
+    },
+    {
+      "id": 11,
+      "name": "Кампари / Campari 0,4ml",
+      "price": "110ден."
+    }
+  ],
+  [
+    {
+      "id": 25,
+      "name": "Вигор / Vigor 0,4ml",
+      "price": "80ден."
+    },
+    {
+      "id": 29,
+      "name": "Смирнов / Smirnoff 0,4ml",
+      "price": "100ден."
+    },
+    {
+      "id": 26,
+      "name": "Финландија / Finlandija 0,4ml",
+      "price": "100ден."
+    },
+    {
+      "id": 27,
+      "name": "Абсолут / Absolut 0,4ml",
+      "price": "120ден."
+    },
+    {
+      "id": 28,
+      "name": "Белведере / Belvedere 0,4ml",
+      "price": "350ден."
+    },
+    {
+      "id": 58,
+      "name": "Греј Гус / Grey Goose 0,4ml",
+      "price": "350ден.",
+      "promotionPrice": ""
+    }
+  ],
+  [
+    {
+      "id": 30,
+      "name": " Хенеси в.с.о.п / Hennesy 0,4ml",
+      "price": "350ден."
+    },
+    {
+      "id": 31,
+      "name": "Коурвозје в.с / Courvoisier 0,4ml",
+      "price": "300ден."
+    }
+  ],
+  [
+    {
+      "id": 33,
+      "name": "Бадел / Badel 0,4ml",
+      "price": "80ден."
+    },
+    {
+      "id": 34,
+      "name": "Вињак Рубин / Rubin Vinjak 0,4ml",
+      "price": "80ден."
+    },
+    {
+      "id": 35,
+      "name": "Шток / Stock 0,4ml",
+      "price": "90ден."
+    },
+    {
+      "id": 32,
+      "name": "Реми Мартин в.с.о.п / Remmy Martin 0,4ml",
+      "price": "350ден."
+    }
+  ],
+  [
+    {
+      "id": 36,
+      "name": "Сиера Силвер / Sierra Silver 0,3ml",
+      "price": "100ден."
+    },
+    {
+      "id": 37,
+      "name": "Сиера Голд / Sierra Gold 0,3ml",
+      "price": "100ден."
+    },
+    {
+      "id": 38,
+      "name": "Хозе Куерво / Jose Cuervo 0,3ml",
+      "price": "150ден."
+    }
+  ],
+  [
+    {
+      "id": 39,
+      "name": "Џони-Валкер Ред Лабер / Johnny-Walker Red Label 0,4ml",
+      "price": "150ден."
+    },
+    {
+      "id": 40,
+      "name": "J&B 0,4ml",
+      "price": "150ден."
+    },
+    {
+      "id": 41,
+      "name": "Манки Шолдер / Moneky Shoulder 0,4ml",
+      "price": "270ден."
+    },
+    {
+      "id": 42,
+      "name": "Џони Валкер Блек Лабел / Johhny Walker Black Label 0,4ml",
+      "price": "270ден."
+    },
+    {
+      "id": 43,
+      "name": "Чивас Регал 12 / Chivas Regal 12 0,4ml",
+      "price": "250ден."
+    },
+    {
+      "id": 44,
+      "name": "Гленфидик 12 / Glenfiddich 12 0,4ml",
+      "price": "320ден."
+    },
+    {
+      "id": 45,
+      "name": "Dimple Golden Selection 0,4ml",
+      "price": "300ден."
+    },
+    {
+      "id": 46,
+      "name": "Карду / Cardhu 0,4ml",
+      "price": "350ден."
+    }
+  ],
+  [
+    {
+      "id": 47,
+      "name": "Џејмисон / Jameson 0,4ml",
+      "price": "170ден."
+    },
+    {
+      "id": 48,
+      "name": "Бушмилс / Bushmils 0,4ml",
+      "price": "160ден."
+    },
+    {
+      "id": 49,
+      "name": "Бушмилс блек барел / Bushmils Black 0,4ml",
+      "price": "220ден."
+    },
+    {
+      "id": 50,
+      "name": "Jameson Black barrel 0,4ml",
+      "price": "300ден."
+    }
+  ],
+  [
+    {
+      "id": 51,
+      "name": "Џим Бим / Jim Beam 0,4ml",
+      "price": "150ден."
+    },
+    {
+      "id": 52,
+      "name": "Фоур Розес / Four Roses 0,4ml",
+      "price": "170ден."
+    }
+  ],
+  [
+    {
+      "id": 53,
+      "name": "Џек Даниелс / Jack Daniels 0,4ml",
+      "price": "200ден."
+    },
+    {
+      "id": 54,
+      "name": "Џек Даниелс Хани / Jack Daniels Honey 0,4ml",
+      "price": "220ден."
+    },
+    {
+      "id": 55,
+      "name": "Џентлемен Џек / Gentleman Jack 0,4ml",
+      "price": "250ден.",
+      "promotionPrice": ""
+    },
+    {
+      "id": 57,
+      "name": "Џек Даниелс Сингл Барел / Jack Daniels Single Barrel 0,4ml",
+      "price": "300ден."
+    }
+  ],
+  [
+    {
+      "id": 59,
+      "name": "Aperol Spritz",
+      "price": "200ден."
+    },
+    {
+      "id": 60,
+      "name": "Hugo Spritz",
+      "price": "200ден."
+    },
+    {
+      "id": 61,
+      "name": "Rose Spritz",
+      "price": "200ден."
+    },
+    {
+      "id": 62,
+      "name": "Lavander Spritz",
+      "price": "200ден."
+    }
+  ],
+  [
+    {
+      "id": 63,
+      "name": "Gordon's Tonic",
+      "price": "160ден."
+    },
+    {
+      "id": 64,
+      "name": "Gordon's Pink Tonic",
+      "price": "170ден."
+    },
+    {
+      "id": 65,
+      "name": "Hendrics Tonic",
+      "price": "300ден."
+    },
+    {
+      "id": 66,
+      "name": "Tanqueray Tonic",
+      "price": "200ден."
+    }
+  ],
+  [
+    {
+      "id": 75,
+      "name": "Almonds",
+      "price": "150ден."
+    },
+    {
+      "id": 80,
+      "name": "Corn",
+      "price": "80ден."
+    },
+    {
+      "id": 76,
+      "name": "Hazelnuts",
+      "price": "150ден."
+    },
+    {
+      "id": 77,
+      "name": "Cashew nuts",
+      "price": "150ден."
+    },
+    {
+      "id": 78,
+      "name": "Pistachios",
+      "price": "150ден."
+    },
+    {
+      "id": 79,
+      "name": "Mix",
+      "price": "150ден."
+    }
+  ]
+]

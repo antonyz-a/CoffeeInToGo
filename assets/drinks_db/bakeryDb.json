@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Banana Bread",
+    "price": "80ден."
+  },
+  {
+    "id": 2,
+    "name": "Cinnamon Roll",
+    "price": "80ден."
+  },
+  {
+    "id": 3,
+    "name": "Croissant",
+    "price": "80ден."
+  },
+  {
+    "id": 4,
+    "name": "Donuts",
+    "price": "80ден."
+  },
+  {
+    "id": 5,
+    "name": "Spinach pie",
+    "price": "70ден."
+  },
+  {
+    "id": 6,
+    "name": "Breakfast combo",
+    "price": "220ден.",
+    "description": "Coffee / Tea + Fresh Juice + Croissant / Spinach pie"
+  }
+]
+
+

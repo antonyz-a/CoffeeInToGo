@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "Tea",
+    "price": "70ден.",
+    "description": "(herbal or fruity, ask the staff)"
+  },
+  {
+    "id": 2,
+    "name": "Warm Chocolate",
+    "price": "90ден."
+  }
+]

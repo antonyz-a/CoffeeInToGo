@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Rosa Water",
+    "price": "50ден."
+  },
+  {
+    "id": 11,
+    "name": "Jana Water",
+    "price": "50ден."
+  },
+  {
+    "id": 2,
+    "name": "Dobra Voda Water",
+    "price": "60ден."
+  },
+  {
+    "id": 3,
+    "name": "Coca Cola",
+    "price": "70ден."
+  },
+  {
+    "id": 4,
+    "name": "Fanta",
+    "price": "70ден."
+  },
+  {
+    "id": 5,
+    "name": "Schweppes",
+    "price": "70ден."
+  },
+  {
+    "id": 6,
+    "name": "Tonic",
+    "price": "70ден."
+  },
+  {
+    "id": 7,
+    "name": "Cedevita",
+    "price": "60ден."
+  },
+  {
+    "id": 8,
+    "name": "Ice Tea",
+    "price": "80ден."
+  },
+  {
+    "id": 9,
+    "name": "Juices",
+    "price": "80ден."
+  },
+  {
+    "id": 10,
+    "name": "Red Bull",
+    "price": "150ден."
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Soda Citron 250мл",
+    "description": "(squeesed lemon with tonic)",
+    "price": "90ден."
+  },
+  {
+    "id": 2,
+    "name": "Refresher 250мл",
+    "description": "(pineapple, apple, lemon, ginger)",
+    "price": "100ден."
+  },
+  {
+    "id": 3,
+    "name": "Immunobooster 250мл",
+    "description": "(orange, pomegranate, apple)",
+    "price": "100ден."
+  },
+  {
+    "id": 4,
+    "name": "Ginger Shot 100мл",
+    "description": "(ginger, lemon, turmeric, black pepper)",
+    "price": "100ден."
+  },
+  {
+    "id": 5,
+    "name": "Orange Juice",
+    "price": "100ден."
+  },
+  {
+    "id": 6,
+    "name": "Apple Juice",
+    "price": "100ден."
+  },
+  {
+    "id": 7,
+    "name": "Pineaple Juice",
+    "price": "150ден."
+  },
+  {
+    "id": 8,
+    "name": "Pomegranate Juice",
+    "price": "150ден."
+  }
+]

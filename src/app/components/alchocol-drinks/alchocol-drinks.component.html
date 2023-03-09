@@ -1,0 +1,640 @@
+<div class="coffee_container">
+  <button class="button_back1" routerLink="/home">
+    {{ "BACK" | translate }}
+  </button>
+  <div class="alchocol_main_wrapper">
+    <div class="alchocol_wrapper_one">
+      <div class="apetisani_wrapper">
+        <button mat-button [matMenuTriggerFor]="afterMenu">
+          {{ "AlchoholComponent.ApetisaniButton" | translate }}
+        </button>
+        <mat-menu #afterMenu="matMenu" xPosition="after">
+          <div
+            *ngFor="let apetisan of Apetisani"
+            class="coffee_card apetisan_card"
+          >
+            <div>
+              <h3 class="alchocol_name">
+                {{
+                  !apetisan.name
+                    ? apetisan.name
+                    : ("AlchoholComponent." + apetisan.name | translate)
+                }}
+              </h3>
+              <p>
+                <strong
+                  [ngClass]="
+                    apetisan.promotionPrice
+                      ? 'promotionClass'
+                      : 'promotionClass2'
+                  "
+                  >{{ apetisan.price }}</strong
+                >
+
+                <strong *ngIf="apetisan.promotionPrice">
+                  <span class="on_promotion">Promotion</span>
+                  {{ apetisan.promotionPrice }}</strong
+                >
+              </p>
+            </div>
+          </div>
+        </mat-menu>
+      </div>
+      <mat-accordion>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="beerCss">
+              {{ "AlchoholComponent.Beer" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of beer" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="martiniCss">
+              {{ "AlchoholComponent.Martini" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of martini" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="digestifsCss">
+              {{ "AlchoholComponent.Digestifs" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of digestifs" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="ginCss">
+              {{ "AlchoholComponent.Gin" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of gin" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="rumCss">
+              {{ "AlchoholComponent.Rum" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of rum" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="liquerCss">
+              {{ "AlchoholComponent.Liquers" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of liquers" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="vodkaCss">
+              {{ "AlchoholComponent.Vodka" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of vodka" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="cognacCss">
+              {{ "AlchoholComponent.Cognac" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of cognac" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="brandyCss">
+              {{ "AlchoholComponent.Brandy" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of brandy" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tequilaCss">
+              {{ "AlchoholComponent.Tequila" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of tequila" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="whiskeyCss">
+              {{ "AlchoholComponent.Whisk(e)y" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <p class="alchocol_type">
+              {{ "AlchoholComponent.Scotch whisky" | translate }}
+            </p>
+            <div *ngFor="let drink of whisky" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+            <!-- *Irish Whiskey container -->
+            <p class="alchocol_type">
+              {{ "AlchoholComponent.Irish Whiskey" | translate }}
+            </p>
+            <div
+              class="alchocol_wrapper_two"
+              *ngFor="let drink of irishWhisky"
+              class="coffee_card"
+            >
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+            <!-- *Bourbon container -->
+            <p class="alchocol_type">
+              {{ "AlchoholComponent.Bourbon Whiskey" | translate }}
+            </p>
+            <div
+              class="alchocol_wrapper_two"
+              *ngFor="let drink of bourbonWhisky"
+              class="coffee_card"
+            >
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}
+                  </strong>
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+            <!-- *American container -->
+            <p class="alchocol_type">
+              {{ "AlchoholComponent.American Whiskey" | translate }}
+            </p>
+            <div
+              class="alchocol_wrapper_two"
+              *ngFor="let drink of americanWhisky"
+              class="coffee_card"
+            >
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tequilaCss">
+              {{ "AlchoholComponent.Spritz" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of spritz" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          class="SpritzCss"
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+          hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="tequilaCss">
+              {{ "AlchoholComponent.Gin&Tonics" | translate }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="alchocol_wrapper_two">
+            <div *ngFor="let drink of GinAndTonics" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice
+                        ? 'promotionClass'
+                        : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+  <button class="button_back2" routerLink="/home">
+    {{ "BACK" | translate }}
+  </button>
+</div>
